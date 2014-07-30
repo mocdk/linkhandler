@@ -155,6 +155,7 @@ class Eid {
 
 		$GLOBALS['TSFE']->connectToDB();
 		$GLOBALS['TSFE']->initFEuser(); //!TODO first check if already a fe_user session exists - otherwise this line will overwrite the existing one
+		\TYPO3\CMS\Core\Core\Bootstrap::getInstance()->loadCachedTca();
 		$GLOBALS['TSFE']->checkAlternativeIdMethods();
 
 		$GLOBALS['TSFE']->determineId();
