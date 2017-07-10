@@ -32,12 +32,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '2.0.dev',
 	'constraints' => array(
 		'depends' => array(
-			'php' => '5.3.0-0.0.0',
-			'typo3' => '6.0.0-6.2.99',
 		),
 		'conflicts' => array(
-			'ch_rterecords',
-			'tinymce_rte',
 		),
 		'suggests' => array(
 		),
